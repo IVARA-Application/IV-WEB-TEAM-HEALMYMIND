@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
-// import Login from "../src/components/Login";
+import Login from "../src/components/Login";
+import ThirdPartyLogin from "../src/components/ThirdPartyLogin";
 
 function App() {
   return (
@@ -10,6 +11,12 @@ function App() {
         <>
           <Route exact path="/">
             <HomePage />
+          </Route>
+          <Route exact path="/thirdparty/linkedin">
+            <ThirdPartyLogin type="linkedin" />
+          </Route>
+          <Route exact path="/thirdparty/google">
+            <ThirdPartyLogin type="google" />
           </Route>
           <Route exact path="/login">
             <Login />

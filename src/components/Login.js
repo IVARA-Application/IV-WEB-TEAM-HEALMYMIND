@@ -32,7 +32,7 @@ function SignIn() {
       );
       if (!response.data.success) throw Error(response.data.message);
       window.localStorage.setItem("token", response.data.token);
-      alert("You are logged in. Welcome to MentorBaba!");
+      alert("You are logged in. Welcome to HealMyMind!");
       window.location.replace("/");
     } catch (error) {
       console.error(error);
@@ -45,7 +45,7 @@ function SignIn() {
     <div className="flex flex-wrap signin-container">
       <div className="left-signin w-full md:w-3/5 flex flex-col items-center justify-center">
         <h1 className="text-3xl md:text-5xl mt-4 text-center md:mt-24 font-bold pb-4 md:pb-8">
-          Sign in to MentorBaba
+          Sign in to HealMyMind
         </h1>
         <div className="signin-options flex space-x-4 lg:space-x-8">
           <a href="https://vkrx5omg34.execute-api.ap-south-1.amazonaws.com/latest/login/linkedin">
