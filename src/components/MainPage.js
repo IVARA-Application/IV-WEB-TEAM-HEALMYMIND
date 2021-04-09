@@ -8,9 +8,11 @@ function MainPage() {
       <div className="lg:w-4/5 m-auto">
         <nav className="flex items-center justify-between px-4 py-2 pt-4">
           <h1 className="logo lg:text-3xl">LOGO</h1>
-          <button className="bg-white py-2 px-8 rounded-lg lg:text-2xl">
-            LOGIN
-          </button>
+          <Link href="/login">
+            <button className="bg-white py-2 px-8 rounded-lg lg:text-2xl">
+              LOGIN
+            </button>
+          </Link>
         </nav>
         <div className="flex flex-col py-4">
           <h1 className="Tagline text-center pt-2 text-4xl">#WeForYou</h1>
