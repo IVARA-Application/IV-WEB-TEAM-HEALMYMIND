@@ -16,7 +16,7 @@ function SignIn() {
     console.log("Sending...");
     try {
       const response = await axios.post(
-        "https://vkrx5omg34.execute-api.ap-south-1.amazonaws.com/latest/login",
+        "https://amq5n2mmhd.execute-api.ap-south-1.amazonaws.com/latest/login",
         {
           email: document.getElementById("email-input").value,
           password: document.getElementById("password-input").value,
@@ -48,10 +48,10 @@ function SignIn() {
           Sign in to HealMyMind
         </h1>
         <div className="signin-options flex space-x-4 lg:space-x-8">
-          <a href="https://vkrx5omg34.execute-api.ap-south-1.amazonaws.com/latest/login/linkedin">
+          <a href="https://amq5n2mmhd.execute-api.ap-south-1.amazonaws.com/latest/login/linkedin">
             <img className="object-contain" src={linkedin} alt="Linkedin" />
           </a>
-          <a href="https://vkrx5omg34.execute-api.ap-south-1.amazonaws.com/latest/login/google">
+          <a href="https://amq5n2mmhd.execute-api.ap-south-1.amazonaws.com/latest/login/google">
             <img className="object-contain" src={google} alt="Google" />
           </a>
           <img className="object-contain opacity-25" src={fb} alt="Facebook" />

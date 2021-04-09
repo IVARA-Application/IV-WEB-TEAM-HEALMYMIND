@@ -15,7 +15,7 @@ function ThirdPartyLogin(props) {
       case "linkedin":
         axios
           .get(
-            `https://vkrx5omg34.execute-api.ap-south-1.amazonaws.com/latest/redirect/linkedin?code=${code}`,
+            `https://amq5n2mmhd.execute-api.ap-south-1.amazonaws.com/latest/redirect/linkedin?code=${code}`,
             {
               validateStatus: function (status) {
                 return status >= 200 && status < 500;
@@ -43,7 +43,7 @@ function ThirdPartyLogin(props) {
       case "google":
         axios
           .get(
-            `https://vkrx5omg34.execute-api.ap-south-1.amazonaws.com/latest/redirect/google?code=${code}`,
+            `https://amq5n2mmhd.execute-api.ap-south-1.amazonaws.com/latest/redirect/google?code=${code}`,
             {
               validateStatus: function (status) {
                 return status >= 200 && status < 500;

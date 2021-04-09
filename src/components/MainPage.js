@@ -1,16 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import img from "../img/mainpage.png";
 
 function MainPage() {
+  const [login, setLogin] = useState("LOGIN");
+  function toggleLogin() {
+    if (window.localStorage.getItem("auth") === "true") {
+      window.localStorage.setItem("token", "");
+      window.localStorage.setItem("auth", "false");
+      setLogin("LOGIN");
+    } else window.location.href = "/login";
+  }
+
+  useEffect(() => {
+    if (window.localStorage.getItem("auth") === "true") setLogin("LOGOUT");
+  });
   return (
     <div className="main-page">
       <div className="lg:w-4/5 m-auto">
         <nav className="flex items-center justify-between px-4 py-2 pt-4">
           <h1 className="logo lg:text-3xl">LOGO</h1>
           <Link href="/login">
-            <button className="bg-white py-2 px-8 rounded-lg lg:text-2xl">
-              LOGIN
+            <button
+              className="bg-white py-2 px-8 rounded-lg lg:text-2xl"
+              onClick={() => {
+                toggleLogin();
+              }}
+            >
+              {login}
             </button>
           </Link>
         </nav>
