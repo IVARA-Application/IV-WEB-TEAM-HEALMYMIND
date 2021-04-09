@@ -8,6 +8,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
 .main-page {
   background-color: #ffd32a;
 }
@@ -182,4 +186,65 @@ body {
 
 .leaf {
   z-index: -2;
+}
+
+/* Login */
+
+.signin-container h1,
+.createacc-container h1 {
+  color: #4d4d4d;
+}
+.signin-container p {
+  color: #737272;
+}
+
+.left-signin input {
+  background-color: #ebebeb;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin: 0.75rem 0rem;
+  font-size: 1.25rem;
+  /* transform: translateX(-20%); */
+}
+.left-signin,
+.right-createacc {
+  background-color: #f8f8f8;
+}
+
+.right-signin,
+.left-createacc {
+  background-color: #fed943;
+  min-height: 100vh;
+}
+
+.right-signin p,
+.left-createacc p {
+  color: #efefef;
+}
+
+.right-signin h1,
+.left-createacc h1 {
+  color: white;
+}
+.right-signin button,
+.left-signin button,
+.left-createacc button,
+.right-createacc button {
+  background-color: #fed943;
+  color: white;
+  box-shadow: none;
+}
+
+.right-createacc input {
+  background-color: #ebebeb;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin: 0.75rem 0rem;
+  font-size: 1.25rem;
+}
+
+select {
+  background-color: #ebebeb;
+  border: none;
+  padding: 0rem 0.5rem;
 }
