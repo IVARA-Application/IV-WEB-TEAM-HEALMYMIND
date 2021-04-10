@@ -13,7 +13,7 @@ function anxietypage() {
         </h1>
         <div className="flex flex-wrap justify-center items-center py-8 2xl:py-20">
           <div className="space-y-2 lg:space-y-8 py-2 flex-1 anxiety-left-side">
-            <div className="bg-white mx-2 rounded-lg">
+            <div className="bg-white mx-2 rounded-lg max-w-4xl">
               <div className="flex items-center">
                 <div className="flex items-center text-2xl px-4 space-x-2">
                   <h2 className="text-2xl">Audio1</h2>
@@ -25,13 +25,13 @@ function anxietypage() {
                     <imicons.ImPause className="pause-button" />
                     <biicons.BiChevronsRight className="seek-right" />
                   </div>
-                  <div className="flex items-center">
-                    <input type="range" />
+                  <div className="flex items-center py-2 px-4 w-full max-w-xl">
+                    <input type="range" class="slider" />
                   </div>
                 </div>
               </div>
             </div>
-            <div className=" bg-white mx-2 rounded-lg">
+            <div className=" bg-white mx-2 rounded-lg max-w-4xl">
               <div className="flex items-center">
                 <div className="flex items-center text-2xl px-4 space-x-2">
                   <h2 className="text-2xl">Audio2</h2>
@@ -43,13 +43,13 @@ function anxietypage() {
                     <imicons.ImPause className="pause-button" />
                     <biicons.BiChevronsRight className="seek-right" />
                   </div>
-                  <div className="flex items-center">
-                    <input type="range" />
+                  <div className="flex items-center py-2 px-4 w-full max-w-xl">
+                    <input type="range" class="slider" />
                   </div>
                 </div>
               </div>
             </div>
-            <div className=" bg-white mx-2 rounded-lg">
+            <div className=" bg-white mx-2 rounded-lg max-w-4xl">
               <div className="flex items-center">
                 <div className="flex items-center text-2xl px-4 space-x-2">
                   <h2 className="text-2xl">Audio3</h2>
@@ -61,13 +61,13 @@ function anxietypage() {
                     <imicons.ImPause className="pause-button" />
                     <biicons.BiChevronsRight className="seek-right" />
                   </div>
-                  <div className="flex items-center">
-                    <input type="range" />
+                  <div className="flex items-center py-2 px-4 w-full max-w-xl">
+                    <input type="range" class="slider" />
                   </div>
                 </div>
               </div>
             </div>
-            <div className=" bg-white mx-2 rounded-lg">
+            <div className=" bg-white mx-2 rounded-lg max-w-4xl">
               <div className="flex items-center">
                 <div className="flex items-center text-2xl px-4 space-x-2">
                   <h2 className="text-2xl">Audio4</h2>
@@ -79,13 +79,13 @@ function anxietypage() {
                     <imicons.ImPause className="pause-button" />
                     <biicons.BiChevronsRight className="seek-right" />
                   </div>
-                  <div className="flex items-center">
-                    <input type="range" />
+                  <div className="flex items-center py-2 px-4 w-full max-w-xl">
+                    <input type="range" class="slider" />
                   </div>
                 </div>
               </div>
             </div>
-            <div className=" bg-white mx-2 rounded-lg">
+            <div className=" bg-white mx-2 rounded-lg max-w-4xl">
               <div className="flex items-center">
                 <div className="flex items-center text-2xl px-4 space-x-2">
                   <h2 className="text-2xl">Audio5</h2>
@@ -97,13 +97,13 @@ function anxietypage() {
                     <imicons.ImPause className="pause-button" />
                     <biicons.BiChevronsRight className="seek-right" />
                   </div>
-                  <div className="flex items-center">
-                    <input type="range" />
+                  <div className="flex items-center py-2 px-4 w-full max-w-xl">
+                    <input type="range" class="slider" />
                   </div>
                 </div>
               </div>
             </div>
-            <div className=" bg-white mx-2 rounded-lg">
+            <div className=" bg-white mx-2 rounded-lg max-w-4xl">
               <div className="flex items-center">
                 <div className="flex items-center text-2xl px-4 space-x-2">
                   <h2 className="text-2xl">Audio6</h2>
@@ -115,8 +115,8 @@ function anxietypage() {
                     <imicons.ImPause className="pause-button" />
                     <biicons.BiChevronsRight className="seek-right" />
                   </div>
-                  <div className="flex items-center">
-                    <input type="range" />
+                  <div className="flex items-center py-2 px-4 w-full max-w-xl">
+                    <input type="range" class="slider" />
                   </div>
                 </div>
               </div>

@@ -37,7 +37,7 @@ function CreateAccount() {
       if (!response.data.success) throw Error(response.data.message);
       window.localStorage.setItem("token", response.data.token);
       alert(
-        "You are signed up for. Welcome to MentorBaba! Please sign in to continue."
+        "You are signed up for. Welcome to HealMyMind! Please sign in to continue."
       );
       window.location.replace("/login");
     } catch (error) {
@@ -54,7 +54,7 @@ function CreateAccount() {
           To keep connected with us please <br /> login with your personal info
         </p>
         <Link to="/login">
-          <button className="rounded-full py-2 px-20 border-2 border-white text-2xl ">
+          <button className="rounded-full py-2 px-20 border-2 border-gray-800 text-2xl ">
             Sign in
           </button>
         </Link>
@@ -89,7 +89,7 @@ function CreateAccount() {
             required
           />
           <select
-            className="py-2 text-gray-500 text-xl border-none w-full"
+            className="py-2 text-gray-400 text-xl border-none w-full"
             id="occupation-input"
           >
             <option defaultValue>Occupation</option>

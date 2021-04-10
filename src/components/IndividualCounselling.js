@@ -20,18 +20,14 @@ function IndividualCounselling() {
           <img src={img} alt="" className="pt-8 py-4" />
         </div>
         <div className="form-container relative">
-          <div className="flex flex-col items-center justify-center py-10 rounded-md shadow-xl">
-            <img
-              src={left}
-              alt=""
-              className="absolute right-1/2 leaf leaf-left"
-            />
-            <img
-              src={right}
-              alt=""
-              className="absolute left-1/2 leaf leaf-right"
-            />
-            <form action="" className="w-4/5 m-auto">
+          <span className="absolute top-0 left-0 leaf">
+            <img src={left} alt="" className="leaf-left" />
+          </span>
+          <span className="absolute top-0 leaf left-1/2">
+            <img src={right} alt="" className="leaf-right" />
+          </span>
+          <div className="flex flex-col items-center  justify-center py-10 rounded-md shadow-xl">
+            <form action="" className="w-4/5 m-auto z-10">
               <h1 className="text-center pb-12 text-xl">Register Here !</h1>
               <div className="grid grid-cols-2 space-y-4 text-black">
                 <input
@@ -61,7 +57,7 @@ function IndividualCounselling() {
                 <select
                   name=""
                   id=""
-                  className="cursor-pointer col-span-2 py-1 px-1 text-gray-400 rounded-md shadow"
+                  className="select-s cursor-pointer col-span-2 py-1 px-1 text-gray-400 rounded-md shadow"
                 >
                   <option Defaultvalue>PICK SCHEDULE FOR SESSION</option>
                 </select>

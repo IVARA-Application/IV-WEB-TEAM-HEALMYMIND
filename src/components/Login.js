@@ -92,8 +92,8 @@ function SignIn() {
         <p className="py-12 text-2xl text-center">
           Enter your personal details <br /> and start journey with us
         </p>
-        <Link Link to="/CreateAccount">
-          <button className="rounded-full py-2 px-20 border-2 border-white text-2xl ">
+        <Link to="/createaccount">
+          <button className="rounded-full py-2 px-20 border-2 border-gray-800 text-2xl ">
             Sign up
           </button>
         </Link>

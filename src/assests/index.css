@@ -155,6 +155,34 @@ h1 {
   color: #e3e3e3;
 }
 
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 5px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 8px; /* Set a specific slider handle width */
+  height: 8px; /* Slider handle height */
+  background: #af2500;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 8px; /* Set a specific slider handle width */
+  height: 8px; /* Slider handle height */
+  background: #af2500;
+  cursor: pointer; /* Cursor on hover */
+}
+
 /* career counselling */
 
 .form-container {
@@ -184,18 +212,21 @@ h1 {
   flex: 0.7;
 }
 
+.left-leaf {
+  transform: translate(-50%, -50%);
+}
+
 .leaf {
-  z-index: -2;
+  z-index: -1;
 }
 
 /* Login */
-
 .signin-container h1,
 .createacc-container h1 {
-  color: #4d4d4d;
+  color: #1f1e1e;
 }
 .signin-container p {
-  color: #737272;
+  color: #3b3a3a;
 }
 
 .left-signin input {
@@ -213,25 +244,25 @@ h1 {
 
 .right-signin,
 .left-createacc {
-  background-color: #fed943;
+  background-color: #ffc408;
   min-height: 100vh;
 }
 
 .right-signin p,
 .left-createacc p {
-  color: #efefef;
+  color: #757575;
 }
 
 .right-signin h1,
 .left-createacc h1 {
-  color: white;
+  color: rgb(104, 104, 104);
 }
 .right-signin button,
 .left-signin button,
 .left-createacc button,
 .right-createacc button {
-  background-color: #fed943;
-  color: white;
+  background-color: #ffc408;
+  color: rgb(97, 97, 97);
   box-shadow: none;
 }
 

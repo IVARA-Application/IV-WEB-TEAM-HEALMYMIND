@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import img from "../img/mainpage.png";
+import logo from "../img/Logo.png";
 
 function MainPage() {
   const [login, setLogin] = useState("LOGIN");
@@ -19,7 +20,7 @@ function MainPage() {
     <div className="main-page">
       <div className="lg:w-4/5 m-auto">
         <nav className="flex items-center justify-between px-4 py-2 pt-4">
-          <h1 className="logo lg:text-3xl">LOGO</h1>
+          <img src={logo} alt="" className="h-28" />
           <Link href="/login">
             <button
               className="bg-white py-2 px-8 rounded-lg lg:text-2xl"

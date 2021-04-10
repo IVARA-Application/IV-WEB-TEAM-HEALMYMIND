@@ -20,7 +20,7 @@ function CareerCounselling() {
           <img src={img} alt="" className="pt-8 py-4" />
         </div>
         <div className="form-container relative">
-          <div className="flex flex-col items-center justify-center py-10 rounded-md shadow-xl">
+          <div className="flex flex-col items-center relative justify-center py-10 rounded-md shadow-xl">
             <img
               src={left}
               alt=""

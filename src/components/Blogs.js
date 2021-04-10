@@ -130,7 +130,10 @@ function Blogs() {
                 <span className="quarter-circle absolute flex text-lg text-center pl-2 items-center rounded-br-full w-16 h-16">
                   {element.day} <br /> {element.month}
                 </span>
-                <img src={element.image} className="w-full object-contain" />
+                <img
+                  src={element.image}
+                  className="w-full rounded-t-xl object-contain"
+                />
                 <div className="flex items-center justify-center px-2 py-2">
                   <p>{element.text}</p>
                 </div>
