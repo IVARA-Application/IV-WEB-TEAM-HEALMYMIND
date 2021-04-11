@@ -16,7 +16,7 @@ function AboutUs() {
         being a very important aspect of a child's growth, HealMyMind focuses on
         covering every need of the child mentally with its programs.
       </p>
-      <div className="cards flex flex-wrap items-center justify-evenly gap-2 text-center text-xl py-4 space-y-4">
+      <div className="cards flex flex-wrap items-center justify-evenly gap-2 text-center text-xl py-4 space-y-2 lg:space-y-0">
         <div className="card card1 flex flex-col items-center justify-center w-56 rounded-tl-3xl rounded-br-3xl rounded-md py-4 px-2">
           <img src={we} alt="" />
           <h1>We For You 24x7</h1>

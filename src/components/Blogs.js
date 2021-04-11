@@ -137,7 +137,7 @@ function Blogs() {
                 <div className="flex items-center justify-center px-2 py-2">
                   <p>{element.text}</p>
                 </div>
-                <button className="blog-button px-2 py-1 rounded-md mx-4 ">
+                <button className="blog-button px-2 py-1 rounded-md mx-4">
                   Read More
                 </button>
               </div>

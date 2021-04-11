@@ -279,3 +279,31 @@ select {
   border: none;
   padding: 0rem 0.5rem;
 }
+
+.blog h1,
+.blog button {
+  color: #750e29;
+}
+
+.yellow-line {
+  background: #fed943;
+}
+.red-line {
+  background: #a05a3c;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #af2500;
+  border-radius: 5px;
+}
