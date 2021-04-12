@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import card5 from "../img/botw-card1.png";
-import card6 from "../img/botw-card2.png";
 import * as AiIcons from "react-icons/ai";
 import img1 from "../img/img1.jpeg";
 import img2 from "../img/img2.jpeg";
@@ -37,6 +35,20 @@ const staticBlogAsset = [
     image: img4,
     text: "7 Essentials to manage heavy workload",
     link: "/EssentialsToManage",
+    day: "12",
+    month: "Apr",
+  },
+  {
+    image: img5,
+    text: "Healthy Lifestyle",
+    link: "/HealthyLifestyleOfAStudent",
+    day: "12",
+    month: "Apr",
+  },
+  {
+    image: img6,
+    text: "How Happy Mind Can Create Wonders",
+    link: "/HowHappyMindCanCreateWonders",
     day: "12",
     month: "Apr",
   },
