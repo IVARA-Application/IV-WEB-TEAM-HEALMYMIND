@@ -7,6 +7,8 @@ import card5 from "../img/botw-card1.png";
 import card6 from "../img/botw-card2.png";
 import * as AiIcons from "react-icons/ai";
 
+import { Link } from "react-router-dom";
+
 const staticBlogAsset = [
   {
     image: "https://picsum.photos/id/1000/300/200",
@@ -137,9 +139,11 @@ function Blogs() {
                 <div className="flex items-center justify-center px-2 py-2">
                   <p>{element.text}</p>
                 </div>
-                <button className="blog-button px-2 py-1 rounded-md mx-4">
-                  Read More
-                </button>
+                <Link to="/HowHappyMindCanCreateWonders">
+                  <button className="blog-button px-2 py-1 rounded-md mx-4">
+                    Read More
+                  </button>
+                </Link>
               </div>
             );
           })}
