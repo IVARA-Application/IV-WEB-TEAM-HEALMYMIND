@@ -1,94 +1,58 @@
 import React, { useState } from "react";
-import card1 from "../img/blogs-card1.png";
-import card2 from "../img/blogs-card2.png";
-import card3 from "../img/blogs-card3.png";
-import card4 from "../img/blogs-card4.png";
 import card5 from "../img/botw-card1.png";
 import card6 from "../img/botw-card2.png";
 import * as AiIcons from "react-icons/ai";
+import img1 from "../img/img1.jpeg";
+import img2 from "../img/img2.jpeg";
+import img3 from "../img/img3.jpeg";
+import img4 from "../img/img4.jpeg";
+import img5 from "../img/img5.jpeg";
+import img6 from "../img/img6.jpeg";
 
 import { Link } from "react-router-dom";
 
 const staticBlogAsset = [
   {
-    image: "https://picsum.photos/id/1000/300/200",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus scelerisque arcu ut eros.",
-    link: "",
-    day: "30",
-    month: "Jan",
-  },
-  {
-    image: "https://picsum.photos/id/503/300/200",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus scelerisque arcu ut eros.",
-    link: "",
-    day: "02",
-    month: "Feb",
-  },
-  {
-    image: "https://picsum.photos/id/669/300/200",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus scelerisque arcu ut eros.",
-    link: "",
-    day: "13",
-    month: "Feb",
-  },
-  {
-    image: "https://picsum.photos/id/800/300/200",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus scelerisque arcu ut eros.",
-    link: "",
-    day: "05",
-    month: "Mar",
-  },
-  {
-    image: "https://picsum.photos/id/777/300/200",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus scelerisque arcu ut eros.",
-    link: "",
-    day: "05",
+    image: img6,
+    text: "How Happy Mind Can Create Wonders",
+    link: "/HowHappyMindCanCreateWonders",
+    day: "12",
     month: "Apr",
   },
   {
-    image: "https://picsum.photos/id/123/300/200",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus scelerisque arcu ut eros.",
-    link: "",
-    day: "30",
-    month: "May",
+    image: img5,
+    text: "Healthy lifestyle",
+    link: "/HealthyLifestyleOfAStudent",
+    day: "12",
+    month: "Apr",
   },
   {
-    image: "https://picsum.photos/id/875/300/200",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus scelerisque arcu ut eros.",
-    link: "",
-    day: "30",
-    month: "Dec",
+    image: img1,
+    text: "Multitasking-Pros and Cons",
+    link: "/Multitasking",
+    day: "12",
+    month: "Apr",
   },
   {
-    image: "https://picsum.photos/id/654/300/200",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus scelerisque arcu ut eros.",
-    link: "",
-    day: "30",
-    month: "Jul",
+    image: img3,
+    text: "Anxiety and Panic Attacks difference",
+    link: "/AnxietyAndPanicAttacks",
+    day: "12",
+    month: "Apr",
   },
   {
-    image: "https://picsum.photos/id/221/300/200",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus scelerisque arcu ut eros.",
-    link: "",
-    day: "30",
-    month: "Jun",
+    image: img2,
+    text: "Tackling Stress at work",
+    link: "TacklingStress",
+    day: "12",
+    month: "Apr",
   },
   {
-    image: "https://picsum.photos/id/101/300/200",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus scelerisque arcu ut eros.",
-    link: "",
-    day: "30",
-    month: "May",
+    image: img4,
+    text: "7 Essentials to manage heavy workload",
+    link: "/EssentialsToManage",
+    day: "12",
+    month: "Apr",
   },
 ];
 
@@ -139,7 +103,7 @@ function Blogs() {
                 <div className="flex items-center justify-center px-2 py-2">
                   <p>{element.text}</p>
                 </div>
-                <Link to="/HowHappyMindCanCreateWonders">
+                <Link to={element.link}>
                   <button className="blog-button px-2 py-1 rounded-md mx-4">
                     Read More
                   </button>

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../img/blog.png";
+import img from "../../img/img3.jpeg";
 import * as AiIcons from "react-icons/ai";
 
 function Blog1() {
