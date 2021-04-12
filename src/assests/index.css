@@ -26,12 +26,17 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.main-page h1 {
+  color: black;
+}
+
 /* About-us */
 
 .card,
 .anxiety-page,
 .therapeautic,
-.counselling {
+.counselling,
+.blogs-page {
   background-color: #fed943;
 }
 
@@ -86,9 +91,6 @@ h1 {
 }
 
 /* blogs */
-.blogs-page {
-  background-color: #ffc408;
-}
 
 .blog-card {
   width: 16rem;
@@ -131,6 +133,9 @@ h1 {
 
 .footer {
   background-color: #505050;
+  color: white;
+}
+.footer h1 {
   color: white;
 }
 
@@ -185,10 +190,15 @@ h1 {
 
 /* career counselling */
 
+h1 {
+  color: #af2500;
+}
+
 .form-container {
   background-color: #f4f4f4;
   flex: 0.3;
   max-height: auto;
+  border-radius: 5px;
 }
 
 .form-container h1,

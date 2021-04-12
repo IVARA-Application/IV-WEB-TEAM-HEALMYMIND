@@ -2,7 +2,7 @@ import React from "react";
 
 function TherapeauticAudios() {
   return (
-    <div className="therapeautic min-h-screen">
+    <div className="therapeautic min-h-auto">
       <h1 className="text-center text-xl md:text-3xl py-4 md:py-8 xl:py-8">
         Therapeautic Audios
       </h1>
@@ -15,14 +15,16 @@ function TherapeauticAudios() {
           stress of work, home, etc.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 px-4 gap-4 py-12 2xl:py-28 text-xl">
-          <button className="bg-white py-2 rounded-lg">Topic 1</button>
-          <button className="bg-white py-2 rounded-lg">Topic 2</button>
-          <button className="bg-white py-2 rounded-lg">Topic 3</button>
-          <button className="bg-white py-2 rounded-lg">Topic 4</button>
-          <button className="bg-white py-2 rounded-lg">Topic 5</button>
-          <button className="bg-white py-2 rounded-lg">Topic 6</button>
-          <button className="bg-white py-2 rounded-lg">Topic 7</button>
-          <button className="bg-white py-2 rounded-lg">Topic 8</button>
+          <button className="bg-white py-2 rounded-lg">Stress</button>
+          <button className="bg-white py-2 rounded-lg">Anxiety</button>
+          <button className="bg-white py-2 rounded-lg">Depression</button>
+          <button className="bg-white py-2 rounded-lg">Anger-Management</button>
+          <button className="bg-white py-2 rounded-lg">Feel-good</button>
+          <button className="bg-white py-2 rounded-lg">Meditation</button>
+          <button className="bg-white py-2 rounded-lg">Calming oneself</button>
+          <button className="bg-white py-2 rounded-lg">
+            When Under Pressure
+          </button>
         </div>
       </div>
     </div>

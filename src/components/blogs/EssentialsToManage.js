@@ -245,11 +245,6 @@ function Blog1() {
               <AiIcons.AiOutlineCaretRight />
             </button>
           </div>
-          <p className="px-4 lg:px-12 py-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
-            natus voluptatum, reprehenderit cupiditate mollitia rem ducimus
-            laborum temporibus nobis veniam?
-          </p>
         </div>
         <div className="right-side-blog flex flex-col items-center justify-center flex-1 py-4 lg:py-0">
           <img src={img} alt="" className="rounded-md" />

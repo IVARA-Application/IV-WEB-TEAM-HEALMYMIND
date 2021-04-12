@@ -13,20 +13,6 @@ import { Link } from "react-router-dom";
 
 const staticBlogAsset = [
   {
-    image: img6,
-    text: "How Happy Mind Can Create Wonders",
-    link: "/HowHappyMindCanCreateWonders",
-    day: "12",
-    month: "Apr",
-  },
-  {
-    image: img5,
-    text: "Healthy lifestyle",
-    link: "/HealthyLifestyleOfAStudent",
-    day: "12",
-    month: "Apr",
-  },
-  {
     image: img1,
     text: "Multitasking-Pros and Cons",
     link: "/Multitasking",
@@ -43,7 +29,7 @@ const staticBlogAsset = [
   {
     image: img2,
     text: "Tackling Stress at work",
-    link: "TacklingStress",
+    link: "/TacklingStress",
     day: "12",
     month: "Apr",
   },
@@ -134,35 +120,33 @@ function Blogs() {
         </div>
         <h1 className="botw text-3xl text-center py-6">Blogs of the week</h1>
         <div className="blog-cards w-4/5 mx-auto lg:w-full lg:mx-0 flex flex-wrap gap-4 items-center justify-center lg:justify-evenly py-8">
-          <div className="botw-card relative rounded-2xl shadow-2xl">
+          <div className="botw-card relative rounded-2xl shadow-2xl overflow-hidden">
             <span className="quarter-circle absolute flex text-lg text-center pl-2 items-center w-16 h-16 top-0 left-0">
-              30 <br /> Jan
+              12 <br /> Apr
             </span>
-            <img src={card5} className="w-full object-contain" />
+            <img src={img6} className="w-full object-contain" />
             <div className="flex items-center justify-center px-2 py-2">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
-                scelerisque arcu ut eros.
-              </p>
+              <p className="text-xl">How Happy MindCan Create Wonders</p>
             </div>
-            <button className="blog-button px-2 py-1 rounded-md mx-4">
-              Read More
-            </button>
+            <Link to="/HowHappyMindCanCreateWonders">
+              <button className="blog-button px-2 py-1 rounded-md mx-4">
+                Read More
+              </button>
+            </Link>
           </div>
-          <div className="botw-card relative rounded-2xl shadow-2xl">
+          <div className="botw-card relative rounded-2xl shadow-2xl overflow-hidden">
             <span className="quarter-circle absolute flex text-lg text-center pl-2 items-center rounded-br-full w-16 h-16 top-0 left-0">
-              30 <br /> Jan
+              12 <br /> Apr
             </span>
-            <img src={card6} className="w-full object-contain" />
+            <img src={img5} className="w-full object-contain" />
             <div className="flex items-center justify-center px-2 py-2">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
-                scelerisque arcu ut eros.
-              </p>
+              <p className="text-xl">Healthy Lifestyle</p>
             </div>
-            <button className="blog-button px-2 py-1 rounded-md mx-4 ">
-              Read More
-            </button>
+            <Link to="/HealthyLifestyleOfAStudent">
+              <button className="blog-button px-2 py-1 rounded-md mx-4 ">
+                Read More
+              </button>
+            </Link>
           </div>
         </div>
       </div>
