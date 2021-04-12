@@ -1,4 +1,43 @@
 import React from "react";
+import { Howl, Howler } from "howler";
+const audioArray = [
+  new Howl({
+    src: "https://s3.ap-south-1.amazonaws.com/ivaraedu.com/aud1.aac",
+    html5: true,
+    format: ["aac"],
+  }),
+  new Howl({
+    src: "https://s3.ap-south-1.amazonaws.com/ivaraedu.com/aud2.aac",
+    html5: true,
+    format: ["aac"],
+  }),
+  new Howl({
+    src: "https://s3.ap-south-1.amazonaws.com/ivaraedu.com/aud3.aac",
+    html5: true,
+    format: ["aac"],
+  }),
+  new Howl({
+    src: "https://s3.ap-south-1.amazonaws.com/ivaraedu.com/aud4.aac",
+    html5: true,
+    format: ["aac"],
+  }),
+];
+const audioStatusArray = [];
+audioArray.forEach((_) => {
+  audioStatusArray.push(false);
+});
+
+function playAudio(number, element) {
+  if (audioStatusArray[number]) {
+    audioArray[number].pause();
+    audioStatusArray[number] = false;
+    element.classList.remove("font-bold");
+    return;
+  }
+  audioArray[number].play();
+  audioStatusArray[number] = true;
+  element.classList.add("font-bold");
+}
 
 function TherapeauticAudios() {
   return (
@@ -15,14 +54,68 @@ function TherapeauticAudios() {
           stress of work, home, etc.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 px-4 gap-4 py-12 2xl:py-28 text-xl">
-          <button className="bg-white py-2 rounded-lg">Stress</button>
-          <button className="bg-white py-2 rounded-lg">Anxiety</button>
-          <button className="bg-white py-2 rounded-lg">Depression</button>
-          <button className="bg-white py-2 rounded-lg">Anger-Management</button>
-          <button className="bg-white py-2 rounded-lg">Feel-good</button>
-          <button className="bg-white py-2 rounded-lg">Meditation</button>
-          <button className="bg-white py-2 rounded-lg">Calming oneself</button>
-          <button className="bg-white py-2 rounded-lg">
+          <button
+            className="bg-white py-2 rounded-lg"
+            onClick={(event) => {
+              playAudio(0, event.currentTarget);
+            }}
+          >
+            Stress
+          </button>
+          <button
+            className="bg-white py-2 rounded-lg"
+            onClick={(event) => {
+              playAudio(1, event.currentTarget);
+            }}
+          >
+            Anxiety
+          </button>
+          <button
+            className="bg-white py-2 rounded-lg"
+            onClick={(event) => {
+              playAudio(2, event.currentTarget);
+            }}
+          >
+            Depression
+          </button>
+          <button
+            className="bg-white py-2 rounded-lg"
+            onClick={(event) => {
+              playAudio(3, event.currentTarget);
+            }}
+          >
+            Anger-Management
+          </button>
+          <button
+            className="bg-white py-2 rounded-lg"
+            onClick={(event) => {
+              playAudio(0, event.currentTarget);
+            }}
+          >
+            Feel-good
+          </button>
+          <button
+            className="bg-white py-2 rounded-lg"
+            onClick={(event) => {
+              playAudio(1, event.currentTarget);
+            }}
+          >
+            Meditation
+          </button>
+          <button
+            className="bg-white py-2 rounded-lg"
+            onClick={(event) => {
+              playAudio(2, event.currentTarget);
+            }}
+          >
+            Calming oneself
+          </button>
+          <button
+            className="bg-white py-2 rounded-lg"
+            onClick={(event) => {
+              playAudio(3, event.currentTarget);
+            }}
+          >
             When Under Pressure
           </button>
         </div>
