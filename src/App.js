@@ -32,13 +32,13 @@ function App() {
           <Route exact path="/createaccount">
             <CreateAccount />
           </Route>
-          <Route exact path="/Anxiety">
+          <Route exact path="/AnxietyAndPanicAttacks">
             <AnxietyAndPanicAttacks />
           </Route>
-          <Route exact path="/Essentials">
+          <Route exact path="/EssentialsToManage">
             <EssentialsToManage />
           </Route>
-          <Route exact path="/HealtyLifeStyle">
+          <Route exact path="/HealthyLifestyleOfAStudent">
             <HealthyLifestyleOfAStudent />
           </Route>
           <Route exact path="/HowHappyMindCanCreateWonders">
